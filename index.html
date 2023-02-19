@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <main class="container">
+        <section class="inf-user">
+            <div class="logo-title">
+                <img src="public/icons/slack.svg" width="22px">
+                <p>COINT</p>
+            </div>
+            <div class="content-user-options">
+                <div class="row-perfil-user">
+                    <div class="img-user">
+                        <div class="photo-user">
+                            <img src="public/img/user-img.png" alt="Foto do usuário">
+                        </div>
+                        <div class="icon-config">
+                            <img src="public/icons/gear-solid.svg">
+                        </div>
+                    </div>
+                    <div class="name-user">
+                        <p class="name">João Paulo</p>
+                        <p class="profession">Desenvolvedor</p>
+                    </div>
+                </div>
+                <div class="row-icon">
+                    <div class="icon">
+                        <div class="background">
+                            <img src="public/icons/wallet-solid.svg" width="15px">
+                        </div>
+                    </div>
+                    <div class="name-card">
+                        <p class="inf">Wallet</p>
+                        <p class="value">$50.205,25</p>
+                    </div>
+                </div>
+                <div class="row-icon">
+                    <div class="icon">
+                        <div class="background">
+                            <img src="public/icons/chart-pie-solid.svg" width="15px">
+                        </div>
+                    </div>
+                    <div class="name-card">
+                        <p class="inf">Payments</p>
+                        <p class="value">15 facilities</p>
+                    </div>
+                </div>
+                <div class="row-icon">
+                    <div class="icon">
+                        <div class="background">
+                            <img src="public/icons/lock-solid.svg" width="15px">
+                        </div>
+                    </div>
+                    <div class="name-card">
+                        <p class="inf">Security</p>
+                        <p class="value">Setup access</p>
+                    </div>
+                </div>
+                <div class="row-icon">
+                    <div class="icon">
+                        <div class="background">
+                            <img src="public/icons/people-group-solid.svg" width="15px">
+                        </div>
+                    </div>
+                    <div class="name-card">
+                        <p class="inf">Team</p>
+                        <p class="value">4 members</p>
+                    </div>
+                </div>
+            </div>
+             <div class="logo-out">
+                <div class="icon-exit">
+                    <img src="public/icons/arrow-right-from-bracket-solid.svg" width="15px">
+                </div>
+                <div class="text">
+                    <p>Log Out</p>
+                </div>
+             </div>
+
+        </section>
+        <div class="row-vertigal">
+            <div class="empyt"></div>
+        </div>
+        <section class="chart">
+            <div class="container-top">
+                <div class="title-info">
+                    <p class="title-ing-top">Open a deposit and <span class="b">get a 1%</span> instant bonus <span class="r">></span></p>
+                </div>
+                    <div class="icons-r">
+                    <div class="icon-customize">
+                        <img src="public/icons/sliders-solid.svg" alt="" width="15px">
+                        <p class="text-custom">Customize board</p>
+                    </div>
+                    <div class="icons-notification">
+                        <div class="box-icon">
+                            <img src="public/icons/arrows-spin-solid.svg" width="15px">
+                        </div>
+                        <div class="box-icon ri">
+                            <img src="public/icons/bell-solid.svg" width="15px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-color">
+                <div class="chart-balence">
+                    <div class="title-balance">
+                        <p>Total balance</p>
+                    </div>
+                    <div class="money">
+                        <div class="dolar">
+                            <img src="public/icons/dollar-sign-solid.svg" width="15px">
+                        </div>
+                        <div class="dolar-total">
+                            <p>50 205</p>
+                        </div>
+                    </div>
+                    <div class="borda"></div>
+                    <div class="others">
+                        <div class="others-value">
+                            <div class="value-k">
+                              <img src="public/icons/dollar-sign-solid.svg" width="10px">
+                              <p>28K</p>
+                            </div>
+                            <div class="description-currency">
+                                <p>Crypto</p>
+                            </div>
+                        </div>
+                        <div class="others-value">
+                            <div class="value-k">
+                              <img src="public/icons/dollar-sign-solid.svg" width="10px">
+                              <p>30K</p>
+                            </div>
+                            <div class="description-currency">
+                                <p>Bank</p>
+                            </div>
+                        </div>
+                        <div class="others-value">
+                            <div class="value-k">
+                              <img src="public/icons/dollar-sign-solid.svg" width="10px">
+                              <p>9</p>
+                            </div>
+                            <div class="description-currency">
+                                <p>Stocks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-charts">
+                    <div class="first-chart">
+                        <div class="title-icon">
+                            <p>Income</p>
+                            <img src="public/icons/plus-solid.svg" width="10px">
+                        </div>
+                        <div class="charts-columns"> 
+                            <canvas id="meuGrafico"></canvas>
+                        </div>
+                    </div>
+                    <div class="second-chart">
+                        <div class="title-icon">
+                            <p>Payments</p>
+                            <img src="public/icons/plus-solid.svg" width="10px">
+                        </div>
+                        <div class="charts-columns"> 
+                            <div class="row-icon-color">
+                                <div class="icon-color">
+                                    <div class="background">
+                                        <img src="public/icons/wallet-solid.svg" width="15px">
+                                    </div>
+                                </div>
+                                <div class="name-card-calor">
+                                    <p class="value-color">Wallet</p>
+                                    <p class="info-color">$50.205,25</p>
+                                </div>
+                            </div>
+                            <div class="row-icon-color">
+                                <div class="icon-color">
+                                    <div class="background">
+                                        <img src="public/icons/chart-pie-solid.svg" width="15px">
+                                    </div>
+                                </div>
+                                <div class="name-card-color">
+                                    <p class="value-color">Payments</p>
+                                    <p class="info-color">15 facilities</p>
+                                </div>
+                            </div>
+                            <div class="row-icon-color">
+                                <div class="icon-color">
+                                    <div class="background">
+                                        <img src="public/icons/lock-solid.svg" width="15px">
+                                    </div>
+                                </div>
+                                <div class="name-card-color">
+                                    <p class="value-color">Security</p>
+                                    <p class="info-color">Setup access</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="third-chart">
+                        <div class="title-icon">
+                            <p>Cards</p>
+                            <img src="public/icons/plus-solid.svg" width="10px">
+                        </div>
+                        <div class="charts-columns"> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-pizza">
+                <div class="table">
+                   <div class="table-header">
+                    <div class="table-title">
+                        <p>Income</p>
+                        <p>Expenses</p>
+                    </div>
+                    <div class="title-date">
+                        <p>Date</p>
+                    </div>
+                   </div>
+                   <div class="table-body">
+                     <div class="table-row">
+                        <div class="img-name-user">
+                            <img src="public/icons/people-group-solid.svg" width="20px">
+                            <p>Fulano</p>
+                        </div>
+                        div.
+                     </div>
+                   </div>
+                </div>
+                <div class="pizza"></div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
