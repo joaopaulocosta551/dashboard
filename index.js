@@ -22,12 +22,12 @@
   var myChart = new Chart(cty, {
     type: 'pie',
     data: {
-      labels: ['Fatia 1', 'Fatia 2', ],
+      labels: '',
       datasets: [{
         data: [10, 20, ],
         backgroundColor: [
-          'rgba(255, 99, 132, 0.8)',
-          'rgba(54, 162, 235, 0.8)',
+          'rgba(254, 179, 136, 0.8)',
+          'rgba(188, 174, 196, 0.8)',
           
         ]
       }]
