@@ -325,9 +325,9 @@ body{
 
 .row-icon-color{
     display: flex;
-    margin-bottom: 15px;
-    
+    margin-bottom: 15px;    
 }
+
 .icon-color{
     display: flex;
     align-items: center;
@@ -361,13 +361,14 @@ body{
 .table-pizza{
     display: flex;
     width: 100%;
-    width: 600px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .table-title{
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 70%;
 }
 
 .titleOfTable{
@@ -462,3 +463,39 @@ table tbody tr:hover .box{
     margin-left: 10px;
 }
 
+.pizza{
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: white;
+    max-height: 90%;
+    margin-top: 30px;
+}
+
+.titleActive{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+
+.titleActive p{
+    font-weight: bold;
+}
+
+.arrow-right{
+    display: flex;
+    font-size: 12px;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
+#myChart{
+    width: 250px;
+    height: 200px;
+}
